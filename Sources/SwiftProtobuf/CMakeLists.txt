@@ -66,6 +66,7 @@ add_library(SwiftProtobuf
   struct.pb.swift
   TextFormatDecoder.swift
   TextFormatDecodingError.swift
+  TextFormatDecodingOptions.swift
   TextFormatEncoder.swift
   TextFormatEncodingOptions.swift
   TextFormatEncodingVisitor.swift
