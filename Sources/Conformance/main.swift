@@ -15,10 +15,12 @@
 ///
 // -----------------------------------------------------------------------------
 
-#if os(Linux)
+#if os(Android) || os(Linux) || os(Musl)
 import Glibc
-#else
+#elseif os(iOS) || os(macOS) || os(tvOS)
 import Darwin.C
+#elseif os(Windows)
+import WinSDK
 #endif
 
 import Foundation
