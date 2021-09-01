@@ -14,6 +14,10 @@
 
 import Foundation
 
+#if canImport(WinSDK)
+import WinSDK
+#endif
+
 /// Support parsing float/double values from UTF-8
 internal class DoubleParser {
     // Temporary buffer so we can null-terminate the UTF-8 string

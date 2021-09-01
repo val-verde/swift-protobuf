@@ -23,6 +23,10 @@ import Foundation
 import SwiftProtobuf
 import SwiftProtobufPluginLibrary
 
+#if canImport(WinSDK)
+import WinSDK
+#endif
+
 extension Google_Protobuf_Compiler_Version {
   fileprivate var versionString: String {
     if !suffix.isEmpty {
