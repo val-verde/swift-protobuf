@@ -13,6 +13,9 @@ import PackageDescription
 
 let package = Package(
   name: "SwiftProtobuf",
+  platforms: [
+    .macOS("12")
+  ],
   products: [
     .executable(name: "protoc-gen-swift", targets: ["protoc-gen-swift"]),
     .library(name: "SwiftProtobuf", type: .dynamic, targets: ["SwiftProtobuf"]),
